@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #000;
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* YB theme classes injected by theme.js at runtime */
