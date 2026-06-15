@@ -1,0 +1,17 @@
+name            = "yb-worker"
+main            = "src/worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+WORKER_VERSION = "yb-v3.6"
+
+[[kv_namespaces]]
+binding  = "KV"
+id       = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[[r2_buckets]]
+binding     = "R2"
+bucket_name = "yb-media"
+
+[triggers]
+crons = ["0 * * * *"]
