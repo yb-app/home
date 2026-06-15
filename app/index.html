@@ -10,11 +10,9 @@
   <link rel="manifest" href="/home/app/manifest.json" />
   <title>YB App</title>
   <script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/home/sw.js").catch(function(){});
-      }
-    </script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/home/sw.js").catch(function(){});
+    }
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
