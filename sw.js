@@ -3,7 +3,7 @@ const CACHE_MEDIA  = V + "-media";
 const CACHE_API    = V + "-api";
 const CACHE_APP    = V + "-app";
 
-const APP_SHELL = ["/home/","/home/app/", "/placeholder.jpg"];
+const APP_SHELL = ["/home/", "/placeholder.jpg"];
 
 self.addEventListener("install", function(e) {
   e.waitUntil(
