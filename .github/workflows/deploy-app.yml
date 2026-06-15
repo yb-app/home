@@ -22,7 +22,12 @@ jobs:
         run: |
           npm install
           npm run build
-
+          
+      - name: Copy root files into dist
+        run: |
+          cp sw.js app/dist/
+          cp 404.html app/dist/
+          
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
