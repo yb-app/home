@@ -41,7 +41,7 @@ export function useAppState() {
     set({ theme, shipper });
 
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/home/sw.js").catch(() => {});
+      navigator.serviceWorker.register("/home/sw.js", { scope: "/home/" })
     }
     const onOnline = () => {
       navigator.serviceWorker?.controller?.postMessage({ type: "RECONNECT_EVICT", viewMap: {} });
